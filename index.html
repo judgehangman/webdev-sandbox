@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width:device-width, initial-scale:1.0">
+
+    <title>Test</title>
+    <link rel="icon" type="image/x-icon" href="/img/favicon.ico">
+
+    <meta name="description" contet="SEO stuff here">
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <script src="https://kit.fontawesome.com/b7314cab10.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+
+    <header id="site-header" class="site-header">
+
+        <form action="action_page.php" method="post" class="header-login form-control">
+
+            <div class="welcome-container">
+
+                <!-- Displays current tame and time -->
+
+                <div class="datetime-container">
+                    <p id="time-wrapper"><script> document.write(new Date().toLocaleTimeString(undefined)); </script></p>
+
+                    <p id="date-wrapper"><script> document.write(new Date().toLocaleDateString(undefined, {year:"numeric", month:"long", day:"numeric"})); </script></p>
+                </div>
+ 
+                
+                <img src="https://via.placeholder.com/50" alt="avatar" class="avatar">
+
+                
+
+                <div class="greeting-wrapper">
+                    <p>
+                        <a href="#">
+                            <i class="fa-solid fa-user" aria-label="user icon" title="icon"></i>
+                            &nbsp;welcome, username
+                        </a>
+                    </p>
+                </div>
+                
+                <!-- LINKS TO USER INBOX -->
+                <div class="notification-wrapper">
+                    <p>
+                        <a href="#">
+                            <i class="fa-solid fa-inbox" aria-label="inbox icon"></i>
+                            &nbsp;You have (0) <span><?php echo date ?> (0)</span> new messages
+                        </a>
+                    </p>
+                </div>
+                
+            </div>
+
+            <div class="container login-form">
+
+                <label for="user">
+                    <i class="fa-solid fa-user" aria-label="user icon" title="icon"></i>
+                    <span class="hidden" aria-hidden="false">username</span>
+                </label>
+                <input type="text" name="user" id="username">&nbsp;
+
+                <label for="pwd">
+
+                    <i class="fa-solid fa-key"></i>
+                    <span class="hidden" aria-hidden="false">password</span>
+
+                </label>
+
+                <input type="password" name="pwd" id="password">
+
+                <input type="submit" value="login"><br>
+
+                <label>
+                    <input type="checkbox" name="remember"> Remember me
+                </label>
+            </div>
+        </form>
+
+        <div class="container banner">
+            
+            <img src="https://via.placeholder.com/1920x400" alt="header image" class="banner-img">
+            
+        </div>
+
+        <h1 class="h1">Heading 1</h1>
+
+        <img src="https://via.placeholder.com/150" alt="site logo">
+       
+        <nav id="header-navbar" class="navigation" aria-label="Site Map">
+
+            <ul id="navbar-list" class="navigation">
+                <li><a href="" title="home">Home</a></li>
+                <li><a href="" title="link 1">Link 1</a></li>
+                <li><a href="" title="link 2">Link 2</a></li>
+                <li><a href="" title="link 3">Link 3</a></li>
+            </ul>
+
+        </nav>
+    </header>
+
+    <main id="main" class="main container">
+
+        <section class="section-main" id="main-content-top">
+            
+            <h2 class="h2">Heading 2</h2>
+
+
+            <p class="section-description">Nunc sed scelerisque magna. Nunc laoreet posuere ex, quis gravida sapien consequat ac.</p>
+
+            <article class="article">
+
+                <h3 class="h3">Heading 3</h3>
+
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In sed consectetur odio. Donec consequat eros vel dolor iaculis, at dictum nulla eleifend. In et est eu nibh accumsan posuere ac sed arcu. Sed neque felis, vestibulum et sapien nec, efficitur imperdiet nibh. Sed porta, ante varius feugiat bibendum, magna lacus scelerisque est, id ullamcorper augue lacus eget nibh. Quisque eget malesuada erat. Sed dapibus porttitor eros nec dictum. Cras mattis vestibulum libero, sit amet vulputate leo rhoncus vitae. Pellentesque tristique sed leo sit amet imperdiet. Etiam lobortis lectus vitae tellus pretium ultrices. Duis luctus mi eget metus placerat, in consequat ligula ornare. Donec fermentum ante non lacus placerat aliquet. Aliquam tincidunt augue id erat volutpat, at ornare sem fermentum.</p>
+
+                <p> Sed tristique in diam ut gravida. Pellentesque laoreet cursus diam sed congue. Duis dignissim ligula sed malesuada ullamcorper. Praesent molestie sit amet ex rhoncus efficitur. Nullam tempor dolor vel leo tincidunt, cursus fringilla nunc tincidunt. Nunc scelerisque condimentum arcu vel sollicitudin. Cras laoreet erat tincidunt, congue felis at, aliquam nisl.</p>
+
+            </article>
+
+            <article class="article">
+
+                <h3 class="h3">Heading 3</h3>
+
+                <p>Cras mattis vestibulum libero, sit amet vulputate leo rhoncus vitae. Pellentesque tristique sed leo sit amet imperdiet. Etiam lobortis lectus vitae tellus pretium ultrices. Duis luctus mi eget metus placerat, in consequat ligula ornare. Donec fermentum ante non lacus placerat aliquet.</p>
+
+                <p> Sed tristique in diam ut gravida. Pellentesque laoreet cursus diam sed congue. Duis dignissim ligula sed malesuada ullamcorper.</p>
+
+            </article>
+
+        </section>
+
+        <hr class="hr-break-section">
+
+        <section class="section" id="main-content-mid">
+            
+            <h2 class="h2">Heading 2</h2>
+
+            <p class="section-description">Aliquam vel ante porttitor, pellentesque purus ac, accumsan dui.</p>
+
+            <nav class="section-nav" aria-label="section 2 table of contents">
+                <ul class="secnav-ul">
+                    <li class="secnav-ul-item">
+                        <a href="#3a">Heading 3</a>
+                        <ul class=secnav-ul-nested>
+                            <li class="secnav-ul-nested-item"><a href="#3a-4a">Heading 4</a></li>
+                        </ul>
+                    </li>
+                    <li class="secnav-ul-item">
+                        <a href="#3b">Heading 3</a>
+                        <ul class="secnav-ul-nested">
+                            <li class="secnav-ul-nested-item"><a href="#3b-4a">Heading 4</a></li>
+                            <li class="secnav-ul-nested-item">
+                                <a href="#3b-4b">Heading 4</a>
+                                <ul class="secnav-ul-nested">
+                                    <li class="secnav-ul-nested-item"><a href=#3b-4a-5a>Heading 5</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+
+            </nav>
+
+            <article class="article">
+
+                <h3 class="h3" id="3a">Heading 3</h3>
+                
+                <p>Etiam quis finibus ligula. Nunc malesuada, leo quis posuere scelerisque, sem odio consequat dui, ac faucibus erat velit ut orci. Vestibulum dapibus cursus odio, id convallis dui placerat quis. Nunc ac urna at turpis volutpat ullamcorper mattis eu nisl. Duis aliquet, dui ut tempor malesuada, tortor nisi consequat libero, dictum porttitor ante enim id orci.</p>
+
+                <h4 class="h4" id="3a-4a">Heading 4</h4>
+                
+                <p>Aenean consequat nulla vitae risus porttitor posuere. Nullam pretium mollis ex, nec venenatis nulla scelerisque non. Pellentesque scelerisque venenatis aliquam. Pellentesque convallis nulla vel ipsum dictum malesuada. Proin aliquam nunc in enim interdum, a accumsan dui tempus. Quisque ac pharetra lorem, quis tincidunt quam.</p>
+                
+            </article>
+
+            <article class="article">
+                
+                <h3 class="h3"id="3b">Heading 3</h3>
+
+                <p>Vivamus velit sem, elementum pretium lectus quis, cursus efficitur lacus. Nulla posuere sapien a nisl dictum, quis interdum orci venenatis.</p>
+                <p>Aenean efficitur feugiat sapien eget malesuada. Praesent pretium felis malesuada varius elementum. Sed imperdiet a nisi eu dictum.</p>
+                
+                <h4 class="h4" id="3b-4a">Heading 4</h4>
+
+                <p>Nulla tristique efficitur massa, et varius nisi sollicitudin vitae. Donec nisi tortor, eleifend id iaculis ac, porttitor ac mi. Sed eu gravida magna. Mauris enim lacus, malesuada et lacus non, tempor vestibulum nulla. Integer bibendum elit vel diam lobortis finibus. Curabitur euismod in justo luctus sollicitudin. Nunc tortor tortor, euismod a massa vel, gravida aliquet eros. </p>
+                
+               
+                <img src="https://via.placeholder.com/100" alt="placeholder 100px">
+                <img src="https://via.placeholder.com/100" alt="placeholder 100px">
+                <img src="https://via.placeholder.com/100" alt="placeholder 100px">
+                <img src="https://via.placeholder.com/100" alt="placeholder 100px">
+                <img src="https://via.placeholder.com/100" alt="placeholder 100px">
+                <img src="https://via.placeholder.com/100" alt="placeholder 100px">
+                <img src="https://via.placeholder.com/100" alt="placeholder 100px">
+                <img src="https://via.placeholder.com/100" alt="placeholder 100px">
+                <img src="https://via.placeholder.com/100" alt="placeholder 100px">
+                <img src="https://via.placeholder.com/100" alt="placeholder 100px">
+                <img src="https://via.placeholder.com/100" alt="placeholder 100px">
+                <img src="https://via.placeholder.com/100" alt="placeholder 100px">
+                <img src="https://via.placeholder.com/100" alt="placeholder 100px">
+                <img src="https://via.placeholder.com/100" alt="placeholder 100px">
+                <img src="https://via.placeholder.com/100" alt="placeholder 100px">
+                <img src="https://via.placeholder.com/100" alt="placeholder 100px">
+                <img src="https://via.placeholder.com/100" alt="placeholder 100px">
+                <img src="https://via.placeholder.com/100" alt="placeholder 100px">
+                
+                <h4 class="h4" id="3b-4b">Heading 4</h4>
+
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae, ab. Tempora molestiae maiores similique dolor quae fugit aliquam error. Suscipit culpa possimus fugit! Deleniti similique totam vitae nisi provident repudiandae!</p>
+
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, praesentium molestiae? Nam recusandae libero numquam blanditiis quaerat esse harum asperiores sequi, inventore odio, consectetur alias odit. Incidunt eos accusantium ratione!</p>
+
+                <h5 class="h5" id="3b-4a-5a">Heading 5</h5>
+
+                <p>Vivamus velit sem, elementum pretium lectus quis, cursus efficitur lacus. Nulla posuere sapien a nisl dictum, quis interdum orci venenatis.</p>
+
+            </article>
+
+        </section>
+
+        <hr class="hr-break-section">
+
+        <section class="section" id="main-content-bottom">
+            
+            <h2 class="h2">Heading 2</h2>
+
+            <p class="section-description">Lorem ipsum dolor sit amet.</p>
+
+            <article class="article">
+                
+                <h3 class="h3">Heading 3</h3>
+
+                <p>Aliquam mollis finibus leo, eu tempor dolor pretium vitae. Suspendisse eleifend, leo eget tempor pellentesque, urna justo volutpat tellus, vel iaculis augue ligula sed nunc. Cras a lorem lacus. In sollicitudin metus ac ante bibendum, eu tincidunt lacus commodo. In faucibus condimentum massa quis blandit. Aliquam blandit nunc bibendum nisl tristique aliquam.</p>
+
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat asperiores necessitatibus et doloribus, error itaque sit voluptatibus architecto impedit iusto.</p>
+
+                <p>Ex delectus incidunt molestias fugiat, molestiae cupiditate cumque iure voluptas, inventore, neque qui amet alias temporibus ipsa consequuntur eos distinctio sed architecto?</p>
+
+                <h4 class="h4">Heading 4</h4>
+
+                <ul class="article-ul">
+                    <li class="article-ul-item">Lorem, ipsum.</li>
+                    <li class="article-ul-item">Dolore, nihil!</li>
+                    <li class="article-ul-item">Molestias, est!</li>
+                    <li class="article-ul-item">Soluta, libero!</li>
+                    <li class="article-ul-item">Deleniti, nesciunt!</li>
+                </ul>
+
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rerum voluptate aliquid ad, quaerat a voluptatum obcaecati vel placeat sapiente ipsa. Totam dolorem vero incidunt sequi.</p>
+
+                <h4 class="h4">Heading 4</h4>
+
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis, et?</p>
+
+                <table class="table">
+                    <thead class="thead">
+                        <tr class="tr">
+                            <th class="th">Lorem.</th>
+                            <th class="th">Expedita.</th>
+                            <th class="th">Quos!</th>
+                        </tr>
+                        <tbody>
+                            <tr class="tr">
+                                <td class="td">Lorem, ipsum dolor.</td>
+                                <td class="td">Recusandae, ullam inventore.</td>
+                                <td class="td">Lorem, ipsum dolor.</td>
+                            </tr>
+                            <tr class="tr">
+                                <td class="td">Lorem, ipsum dolor.</td>
+                                <td class="td">Lorem, ipsum dolor.</td>
+                                <td class="td">Dolorem, deleniti nobis.</td>
+                            </tr>
+                            <tr>
+                                <td class="td">Lorem, ipsum dolor.</td>
+                                <td class="td">Labore, id unde.</td>
+                                <td class="td">Maiores, enim fugit.</td>
+                            </tr>
+                            <tr class="tr">
+                                <td class="td">Lorem, ipsum dolor.</td>
+                                <td class="td">Soluta, eligendi error.</td>
+                                <td class="td">Laudantium, veniam reiciendis.</td>
+                            </tr>
+                            <tr class="tr">
+                                <td class="td">Lorem, ipsum dolor.</td>
+                                <td class="td">Sequi, esse culpa!</td>
+                                <td class="td">Nisi, praesentium atque?</td>
+                            </tr>
+                            <tr>
+                                <td class="td">Lorem, ipsum dolor.</td>
+                                <td class="td">Illo, quis nulla!</td>
+                                <td class="td">Repellat, ipsum fuga!</td>
+                            </tr>
+                        </tbody>
+                    </thead>
+                </table>
+
+                <p>Nobis tempore sequi quod quibusdam similique et molestias ratione! Nemo ullam, perspiciatis animi reprehenderit mollitia inventore consequuntur obcaecati ratione ipsam ipsa rerum illum quas neque debitis enim! Enim, magni! Corporis perferendis similique illo consequuntur! Maxime ducimus aliquid neque, iure voluptatibus iste tempora earum aspernatur, dolores libero ipsam exercitationem maiores debitis!</p>
+                <p>Repudiandae adipisci maiores tenetur non vero fuga, minima perferendis, similique quod voluptatem hic. Eaque beatae ipsa saepe, corrupti quaerat repellat, hic voluptate cupiditate dolorum vel possimus nemo obcaecati iure odio fugit asperiores dolor ad molestias quis omnis. Inventore, praesentium nemo esse temporibus odit laborum repudiandae accusantium doloremque omnis recusandae quis.</p>
+
+
+                <h5 class="h5">Heading 5</h5>
+
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet a aliquid expedita eum debitis odit nesciunt cupiditate consectetur modi harum enim ad placeat excepturi vel repellat sapiente optio consequuntur nam inventore quibusdam, ipsam perferendis. Nesciunt omnis, libero totam beatae cumque, neque voluptatibus vero illo adipisci placeat nemo! Corrupti, quam magnam?</p>
+
+                <ol class="article-ol">
+                    <li class="article-ol-item">Lorem ipsum dolor sit amet.</li>
+                    <li class="article-ol-item">Aut voluptates quam ipsa recusandae.</li>
+                    <li class="article-ol-item">Quis optio inventore iure nulla!</li>
+                </ol>
+
+                <p>Amet a aliquid expedita eum debitis odit nesciunt cupiditate consectetur modi.</p>
+
+                <h5 class="h5">Heading 5</h5>
+
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero quia quidem dolorum id enim, velit voluptatibus assumenda distinctio iure soluta aliquam aspernatur excepturi et sed similique error minima saepe eaque?</p>
+
+                <table class="table">
+                    <thead class="thead">
+                        <tr class="tr">
+                            <th>Lorem, ipsum.</th>
+                            <th>Nulla, nobis?</th>
+                            <th>Nemo, non.</th>
+                        </tr>
+                    </thead>
+                    <tbody class="tbody">
+                        <tr class="tr">
+                            <td class="td"><img src="https://via.placeholder.com/200" alt="row 1 img 1" class="img-table"></td>
+                            <td class="td"><img src="https://via.placeholder.com/200" alt="row 1 img 2" class="img-table"></td>
+                            <td class="td"><img src="https://via.placeholder.com/200" alt="row 1 img 3" class="img-table"></td>
+                        </tr>
+                        <tr class="tr">
+                            <td class="td"><img src="https://via.placeholder.com/200" alt="row 2 img 1" class="img-table"></td>
+                            <td class="td"><img src="https://via.placeholder.com/200" alt="row 2 img 2" class="img-table"></td>
+                            <td class="td"><img src="https://via.placeholder.com/200" alt="row 2 img 3" class="img-table"></td>
+                        </tr>
+                        <tr class="tr">
+                            <td class="td"><img src="https://via.placeholder.com/200" alt="row 3 img 1" class="img-table"></td>
+                            <td class="td"><img src="https://via.placeholder.com/200" alt="row 3 img 2" class="img-table"></td>
+                            <td class="td"><img src="https://via.placeholder.com/200" alt="row 3 img 3" class="img-table"></td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <h6 class="h6">Heading 6</h6>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, quod.</p>
+                <p>Saepe quasi, culpa neque sit porro veritatis tempore pariatur fuga.</p>
+
+                <h6 class="h6">Heading 6</h6>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam fuga culpa tempora aliquid sed delectus earum! Excepturi praesentium eveniet, veritatis soluta odio placeat, magni voluptatibus quasi accusamus, incidunt aliquid voluptatem?</p>
+
+            </article>
+
+            <article class="article">
+
+                <h3 class="h3">Heading 3</h3>
+
+                <p>Ipsum odio beatae corrupti aliquam? Nam minus veritatis quae perspiciatis repudiandae excepturi debitis incidunt est deleniti?</p>
+
+                <p>Facere voluptatum est unde ratione ullam, expedita quod deleniti culpa ut a consequuntur dolores necessitatibus fuga. Dolorem delectus alias eius nisi, aperiam provident eligendi nesciunt tenetur qui, possimus molestias voluptate fugit incidunt aliquid dicta quae adipisci iste, ullam est optio mollitia minus dignissimos repudiandae.</p>
+
+                <p>Placeat illo quis omnis doloremque pariatur?</p>
+
+                <p>Quae perferendis totam dolorem quaerat pariatur voluptatem architecto sequi, animi laboriosam quidem. Perspiciatis repudiandae nulla beatae, assumenda rem voluptate animi architecto aliquam repellendus optio deleniti ab autem asperiores, molestias et eligendi quod ad!</p>
+
+                <h4 class="h4">Heading 4</h4>
+
+                <p>Sapiente eos ab animi ipsa dolore, rerum distinctio quod nisi magnam illum odit nemo, libero iure minima. Exercitationem ipsum asperiores minima, nulla sint, eaque deserunt vero tempore numquam aliquam consequuntur distinctio impedit ut sapiente voluptatem aspernatur veritatis obcaecati cum dolores beatae voluptates in! Exercitationem accusamus, aspernatur quae consequuntur libero iure vero neque itaque? Dolore eaque nihil dolorum, ratione odit dolorem temporibus quis facere, deserunt sunt itaque error!</p>
+
+            </article>
+
+            <article class="article">
+                <h3 class="h3">Heading 3</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus expedita soluta a. Asperiores facere nihil numquam tempore rem totam maiores.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, molestias?</p>
+
+                <ul class="article-ul">
+                    <li class="article-ul-item">Lorem ipsum dolor sit amet.</li>
+                    <li class="article-ul-item">Dignissimos modi incidunt quod deserunt.</li>
+                    <li class="article-ul-item">Facere nihil aliquid eum vel!</li>
+                    <li class="article-ul-item">Libero repellat aliquid quas laboriosam.</li>
+                    <li class="article-ul-item">Similique aperiam natus aliquid mollitia!</li>
+                </ul>
+
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus, praesentium.</p>
+
+            </article>
+
+        </section>
+
+        <section class="section contact-us" id="contact us">
+            
+            <h2 class="h2" id="h2-contact-form">Contact us</h2>
+
+            <form action="/action_page.php" method="post" class="form-control">
+                
+                <label for="fname" class="label">First Name: </label>
+                <input type="text" name="fname" id="fname" class="input" required>&nbsp;
+                <label for="lname" class="label">Last Name: </label>
+                <input type="text" name="lname" id="lname" class="input">
+                
+                <br>
+
+                <label for="email" class="label">Email: </label>
+                <input type="email" name="email" id="email" class="input" required>
+                
+                <br>
+
+                <label for="tel" class="label">Phone: </label>
+                <input type="tel" name="tel" id="tel" class="input">
+
+                <br><br>
+                
+                <label for="location" class="label">Location: </label>
+                <select name="location" class="location-selector form-control" id="location" required>
+                    <option value="0" label="Select a location..." selected="selected">
+                        Select a location...
+                    </option>
+
+                    <optgroup id="location-optgroup-americas" label="Americas">
+                        <option value="USCA" label="US and Canada">US and Canada</option>
+                        <option value="LATAM" label="Latin America">Latin America</option>
+                        <option value="OTHERAM" label="Island Territories (not US)">Island Territories (not US)</option>
+                    </optgroup>
+
+                    <optgroup id="location-optgroup-europe" label="Europe">
+                        <option value="UK">UK and Ireland</option>
+                        <option value="RU">Russia</option>
+                        <option value="NE">Northern Europe</option>
+                        <option value="OTHER">Other Europe</option>
+                    </optgroup>
+                </select>
+
+                <br>
+
+                <label for="comment" class="label">Your Message:</label>
+                <textarea name="comment" id="comment" class="textarea" cols="30" rows="10"></textarea>
+
+                <p>Best time to contact you? </p>
+                <input type="radio" name="best-time" id="morning" class="radio-btn" checked="checked" >
+                <label for="morning" class="label">Morning</label>
+                <input type="radio" name="best-time" id="afternoon" class="radio-btn">
+                <label for="afternoon" class="label">Afternoon</label>
+                <input type="radio" name="best-time" id="night" class="radio-btn">
+                <label for="night" class="label">Night</label>
+                <br>
+                <label for="tos agreement" class="small">Agree with our <a href="">Code of Conduct</a></label>
+                <input type="checkbox" name="tos agreement" id="tos" required>
+
+                <input type="submit" value="Send" class="submit-btn">
+
+            </form>
+
+        </section>
+
+    </main>
+
+    
+    <footer id="site-footer" class="site-footer">
+        
+        <section class="footer-contact">
+            <p>Email us at <a href="mailto:email@example.com">email@example.com</a></p>
+            <p>Phone: <a href="tel:+0 123 456 789">(123) 456 789</a></p>
+            <p>1234 Streetname Blvd <br>City, XX<br>12345</p>
+        </section>
+
+        <section class="copyright-notice">
+
+            <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc/4.0/88x31.png" /></a>
+
+            <p>This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/">Creative Commons Attribution-NonCommercial 4.0 International License</a>.</p>
+
+            <p><a href="">Disclaimer</a></p>
+
+        </section>
+
+        <nav class="footer-nav" aria-label="Site Map - Footer">
+            <img src="img/logo.png" alt="site logo" class="footer-logo">
+            <ul class="navbar-ul-footer">
+                <li class="navbar-ul-footer-item"><a href="test.html" title="home">Home</a></li>
+                <li class="navbar-ul-footer-item"><a href="link1.html" title="link 1">Link 1</a></li>
+                <li class="navbar-ul-footer-item"><a href="link2.html" title="link 2">Link 2</a></li>
+                <li class="navbar-ul-footer-item"><a href="link3.html" title="link 3">Link 3</a></li>
+            </ul>
+        </nav>
+
+    </footer>
+
+
+</body>
+
+</html>
